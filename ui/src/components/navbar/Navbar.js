@@ -26,6 +26,7 @@ const Navbar = () => {
   const [openMenu,setOpenMenu] = useState(false);
 
   return (
+    <>
     <AppBar color='default' position='sticky' elevation={0}>
        <StyledToolbar>
          <Box flex={{xs:25,md:1}}>
@@ -71,7 +72,18 @@ const Navbar = () => {
         />
     </Drawer>
     </AppBar>
-  )
-}
+    
+    <Box sx={{display:'flex',justifyContent:'center'}}>
+    <Typography variant='h5' mr={1}>
+       Simple Recipes for coders
+    </Typography>
+
+    <Typography variant='h5' color={'tomato'} sx={{fontFamily:'Jost,sans-serif'}}>
+       Simple Recipes for coders
+    </Typography>
+</Box>
+</>
+  );
+};
 
 export default Navbar
