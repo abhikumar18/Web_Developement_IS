@@ -37,10 +37,15 @@ const Hero = () => {
     fontSize:20,
   });
 
-  const Styledwrapper = styled(Box)({
-    paddingTop:'140%',
+  const Styledwrapper = styled(Box)(({theme})=>({
+    [theme.breakpoints.up('md')]:{
+        paddingTop:'140%',
+    },
+    [theme.breakpoints.down('md')]:{
+        paddingTop:'40%',
+    },
     width:"80%",
-  });
+  }));
 
   return (
     <Container>
