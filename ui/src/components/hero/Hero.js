@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import { styled } from "@mui/material/styles"; 
 import { Grid, Typography } from '@mui/material';
 import { Box, Container } from '@mui/system';
 import React from 'react';
@@ -38,10 +38,10 @@ const Hero = () => {
   });
 
   const Styledwrapper = styled(Box)(({theme})=>({
-    [theme.breakpoints.up('md')]:{
+    [theme.breakpoints.up("md")]:{
         paddingTop:'140%',
     },
-    [theme.breakpoints.down('md')]:{
+    [theme.breakpoints.down("md")]:{
         paddingTop:'40%',
     },
     width:"80%",
@@ -87,4 +87,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default Hero;
