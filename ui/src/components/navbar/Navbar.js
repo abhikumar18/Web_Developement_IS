@@ -73,12 +73,12 @@ const Navbar = () => {
     </Drawer>
     </AppBar>
     
-    <Box sx={{display:'flex',justifyContent:'center'}}>
-    <Typography variant='h5' mr={1}>
+    <Box sx={{display:'flex',justifyContent:'center',flexDirection:{xs:'column',md:'row'}}}>
+    <Typography align = 'center' variant='h5' mr={{xs:0,md:1}}>
        Simple Recipes for coders
     </Typography>
 
-    <Typography variant='h5' color={'tomato'} sx={{fontFamily:'Jost,sans-serif'}}>
+    <Typography align = 'center' variant='h5' color={'tomato'} sx={{fontFamily:'Jost,sans-serif'}}>
        Simple Recipes for coders
     </Typography>
 </Box>
