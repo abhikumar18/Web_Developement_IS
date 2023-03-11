@@ -30,7 +30,12 @@ const Navbar = () => {
     <AppBar color='default' position='sticky' elevation={0}>
        <StyledToolbar>
          <Box flex={{xs:25,md:1}}>
-            <Typography variant="h4" color={"tomato"}>Testing</Typography>
+            <Typography 
+                variant="h4" 
+                color={"tomato"}
+                sx={{fontFamily:'splash,cursive',textAlign:{xs:'center',md:'left'},}}
+                >
+                  Testing</Typography>
          </Box>
 
          <MenuBox 
@@ -73,7 +78,14 @@ const Navbar = () => {
     </Drawer>
     </AppBar>
     
-    <Box sx={{display:'flex',justifyContent:'center',flexDirection:{xs:'column',md:'row'}}}>
+    <Box 
+       sx={{
+        display:'flex',
+        justifyContent:'center',
+        flexDirection:{xs:'column',md:'row'},
+        padding:1
+        }}
+    >
     <Typography align = 'center' variant='h5' mr={{xs:0,md:1}}>
        Simple Recipes for coders
     </Typography>

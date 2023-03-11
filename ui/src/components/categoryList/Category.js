@@ -1,9 +1,16 @@
-import { Container } from '@mui/system';
+import { Container, Stack } from '@mui/system';
 import React from 'react'
 import { styled } from "@mui/material/styles"; 
 import { Grid, Typography } from '@mui/material';
 import { Box} from '@mui/system';
 import drinks from '../../static/drinks.jpg';
+import dessert from '../../static/dessert.jpg';
+import dinner from '../../static/dinner.jpg';
+import breakfast from '../../static/breakfast2.jpg';
+import salad from '../../static/salad.jpg';
+import healthy from '../../static/healthy.jpg';
+import appetizer from '../../static/appetizer.jpg';
+import instant from '../../static/instant.jpg';
 
 const Category = () => {
  
@@ -18,10 +25,10 @@ const Category = () => {
         width:'100px',
         cursor:'pointer',
         [theme.breakpoints.up('md')]:{
-            height: 400,
+            height: 100,
         },
         [theme.breakpoints.down('md')]:{
-            height: 200,
+            height: 100,
         },
         "&:hover":{
             opacity:0.8,
@@ -46,12 +53,58 @@ const Category = () => {
   })
 
   return (
-    <Container>
+    <Stack 
+        Container 
+        direction={'row'} 
+        mt={4} 
+        spacing={3}
+        ml={3}
+        sx={{overflow:'auto'}}>
+        <CardBox>
+           <StyledCard sx={{backgroundImage:`url(${dessert})`}} />
+           <StyledTypography>Dessert</StyledTypography>
+        </CardBox>
+
         <CardBox>
            <StyledCard sx={{backgroundImage:`url(${drinks})`}} />
            <StyledTypography>Drinks</StyledTypography>
         </CardBox>
-    </Container>
+
+        <CardBox>
+           <StyledCard sx={{backgroundImage:`url(${dinner})`}} />
+           <StyledTypography>Dinner</StyledTypography>
+        </CardBox>
+
+        <CardBox>
+           <StyledCard sx={{backgroundImage:`url(${breakfast})`}} />
+           <StyledTypography>Breakfast</StyledTypography>
+        </CardBox>
+
+        <CardBox>
+           <StyledCard sx={{backgroundImage:`url(${salad})`}} />
+           <StyledTypography>Salad</StyledTypography>
+        </CardBox>
+
+        <CardBox>
+           <StyledCard sx={{backgroundImage:`url(${healthy})`}} />
+           <StyledTypography>Healthy</StyledTypography>
+        </CardBox>
+
+        <CardBox>
+           <StyledCard sx={{backgroundImage:`url(${appetizer})`}} />
+           <StyledTypography>Appetizer</StyledTypography>
+        </CardBox>
+
+        <CardBox>
+           <StyledCard sx={{backgroundImage:`url(${instant})`}} />
+           <StyledTypography>Instant</StyledTypography>
+        </CardBox>
+
+        <CardBox>
+           <StyledCard sx={{backgroundImage:`url(${salad})`}} />
+           <StyledTypography>Salad</StyledTypography>
+        </CardBox>
+    </Stack>
   )
 }
 

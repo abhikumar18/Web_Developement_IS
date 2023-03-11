@@ -6,6 +6,7 @@ import burger from '../../static/burger1.jpg';
 import meat from '../../static/meat.jpg';
 import appetizer from '../../static/appetizer.jpg';
 import drinks from '../../static/drinks.jpg';
+import Category from '../categoryList/Category'
 
 const Hero = () => {
 
@@ -83,6 +84,7 @@ const Hero = () => {
             </Grid>
            
         </Grid>
+        <Category />
     </Container>
   )
 }
