@@ -3,13 +3,12 @@ import { Box } from '@mui/system';
 import React from 'react';
 import burger from '../../static/burger1.jpg';
 
-const PostsCard = () => {
+const PostsCard = ({myDirection}) => {
   return (
         <Box mt={3}>
-            {" "}
            <Link href="#" sx={{textDecoration:'none'}}>
               <Card>
-                 <Box sx={{display:'flex',flexDirection:'row'}}>
+                 <Box sx={{display:{xs:'block',md:`${myDirection}`},flexDirection:'row'}}>
                     <CardMedia component={'img'} height='300' image={burger} alt='burger_image' 
                     sx={{width:'400px',cursor:'pointer','&:hover':{
                      opacity:0.8,
