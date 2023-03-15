@@ -1,4 +1,4 @@
-import { Typography, Grid } from '@mui/material';
+import { Typography, Grid, Pagination, Stack } from '@mui/material';
 import { Box } from '@mui/system';
 import React from 'react';
 import PostsCard from '../../components/posts/PostsCard';
@@ -44,6 +44,9 @@ const Posts = () => {
                <PostsCard myDirection={'block'}/>
             </Grid>
         </Grid>
+        <Stack spacing={2} mt={3} mb={3} justifyContent='center' alignItems={'center'}>
+          <Pagination count={10} color={'warning'} />
+        </Stack>
     </Box>
   )
 }

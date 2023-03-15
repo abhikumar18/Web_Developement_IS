@@ -8,7 +8,14 @@ const PostsCard = ({myDirection}) => {
         <Box mt={3}>
            <Link href="#" sx={{textDecoration:'none'}}>
               <Card>
-                 <Box sx={{display:{xs:'block',md:`${myDirection}`},flexDirection:'row'}}>
+                 <Box 
+                     sx={{
+                     display:{
+                        xs:'block',
+                        sm:`${myDirection}`,
+                        md:`${myDirection}`,
+                     },
+                        flexDirection:'row',}}>
                     <CardMedia component={'img'} height='300' image={burger} alt='burger_image' 
                     sx={{width:'400px',cursor:'pointer','&:hover':{
                      opacity:0.8,
