@@ -1,10 +1,13 @@
 import { Container } from "@mui/material";
 import { Stack, Box } from "@mui/system"
+import Hero from "../hero/Hero";
 import Posts from "../posts/Posts"
 import Rightbar from '../rightbar/Rightbar';
 
 const Main = () => {
   return (
+    <>
+    <Hero />
     <Container>
     <Stack direction={'row'} spacing={1} mt={3}>
         <Box flex={3}>
@@ -16,6 +19,7 @@ const Main = () => {
         </Box>
     </Stack>
     </Container>
+    </>
   );
 }
 
