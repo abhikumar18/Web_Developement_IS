@@ -1,7 +1,7 @@
-import { Container, Stack } from '@mui/system';
+import { Stack } from '@mui/system';
 import React from 'react'
 import { styled } from "@mui/material/styles"; 
-import { Grid, Typography } from '@mui/material';
+import { Typography } from '@mui/material';
 import { Box} from '@mui/system';
 import drinks from '../../static/drinks.jpg';
 import dessert from '../../static/dessert.jpg';
